@@ -1,0 +1,16 @@
+/** Next.js custom App — wraps all pages with theme provider and layout */
+
+import type { AppProps } from 'next/app';
+import { ThemeProvider } from 'next-themes';
+import Layout from '@/layouts/Layout';
+import '@/styles/globals.css';
+
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
+  );
+}
