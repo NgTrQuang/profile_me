@@ -2,16 +2,18 @@
 
 import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
+import { useI18n } from '@/lib/i18n';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useI18n();
 
   return (
     <footer className="border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear} {SITE_CONFIG.name}. Built with{' '}
-          <Heart className="inline w-3 h-3 text-red-500" /> and Next.js.
+          &copy; {currentYear} {SITE_CONFIG.name}. {t.footer.builtWith}{' '}
+          <Heart className="inline w-3 h-3 text-red-500" /> {t.footer.and}
         </p>
         <div className="flex items-center gap-3">
           <a

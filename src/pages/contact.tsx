@@ -5,9 +5,11 @@ import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, Twitter, Copy, Check } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import { SITE_CONFIG } from '@/lib/constants';
+import { useI18n } from '@/lib/i18n';
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
+  const { t } = useI18n();
 
   const copyEmail = async () => {
     try {
@@ -28,8 +30,8 @@ export default function ContactPage() {
   return (
     <>
       <SEOHead
-        title="Contact"
-        description={`Get in touch with ${SITE_CONFIG.name}. Let's build something together.`}
+        title={t.contact.title}
+        description={t.contact.seoDescription.replace('{name}', SITE_CONFIG.name)}
         path="/contact/"
       />
 
@@ -40,10 +42,9 @@ export default function ContactPage() {
           transition={{ duration: 0.5 }}
           className="max-w-lg"
         >
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Get in Touch</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{t.contact.title}</h1>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Have a project in mind, want to collaborate, or just want to say hi? Feel free to
-            reach out. I&apos;m always open to interesting conversations and opportunities.
+            {t.contact.subtitle}
           </p>
         </motion.div>
 
@@ -55,7 +56,7 @@ export default function ContactPage() {
           className="mt-12"
         >
           <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-            Email
+            {t.contact.emailLabel}
           </h2>
           <div className="mt-3 flex items-center gap-3">
             <a
@@ -73,12 +74,12 @@ export default function ContactPage() {
               {copied ? (
                 <>
                   <Check className="w-3.5 h-3.5 text-green-500" />
-                  Copied!
+                  {t.contact.copied}
                 </>
               ) : (
                 <>
                   <Copy className="w-3.5 h-3.5" />
-                  Copy
+                  {t.contact.copy}
                 </>
               )}
             </button>
@@ -93,7 +94,7 @@ export default function ContactPage() {
           className="mt-12"
         >
           <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-            Social
+            {t.contact.socialLabel}
           </h2>
           <div className="mt-3 flex flex-col gap-2">
             {socials.map((social) => (

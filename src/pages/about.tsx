@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
-import { SKILLS, EXPERIENCES, SITE_CONFIG } from '@/lib/constants';
+import { SKILLS, SITE_CONFIG } from '@/lib/constants';
+import { useI18n } from '@/lib/i18n';
 
 /** Stagger animation variants */
 const container = {
@@ -20,11 +21,13 @@ const item = {
 };
 
 export default function AboutPage() {
+  const { t } = useI18n();
+
   return (
     <>
       <SEOHead
-        title="About"
-        description={`Learn more about ${SITE_CONFIG.name} — skills, experience, and background.`}
+        title={t.about.title}
+        description={t.about.seoDescription.replace('{name}', SITE_CONFIG.name)}
         path="/about/"
       />
 
@@ -35,18 +38,10 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">About Me</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{t.about.title}</h1>
           <div className="mt-6 max-w-2xl space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              I&apos;m a full-stack developer with 5+ years of experience building modern web
-              applications. I specialize in React, TypeScript, and Node.js, with a passion for
-              creating fast, accessible, and beautifully designed digital experiences.
-            </p>
-            <p>
-              When I&apos;m not coding, you&apos;ll find me exploring open-source projects,
-              writing technical blog posts, or experimenting with new technologies. I believe
-              in clean code, thoughtful architecture, and continuous learning.
-            </p>
+            <p>{t.about.bio1}</p>
+            <p>{t.about.bio2}</p>
           </div>
         </motion.section>
 
@@ -58,7 +53,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-2xl font-semibold tracking-tight"
           >
-            Skills & Technologies
+            {t.about.skillsTitle}
           </motion.h2>
           <motion.div
             variants={container}
@@ -90,7 +85,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-2xl font-semibold tracking-tight"
           >
-            Tech Stack
+            {t.about.techStackTitle}
           </motion.h2>
           <motion.div
             variants={container}
@@ -123,10 +118,10 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-2xl font-semibold tracking-tight"
           >
-            Experience
+            {t.about.experienceTitle}
           </motion.h2>
           <div className="mt-8 space-y-0">
-            {EXPERIENCES.map((exp, index) => (
+            {t.experiences.map((exp, index) => (
               <motion.div
                 key={exp.company}
                 initial={{ opacity: 0, x: -20 }}

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, Tag } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import { getAllPosts, type PostMeta } from '@/lib/markdown';
+import { useI18n } from '@/lib/i18n';
 
 interface BlogPageProps {
   posts: PostMeta[];
@@ -30,11 +31,13 @@ export const getStaticProps: GetStaticProps<BlogPageProps> = async () => {
 };
 
 export default function BlogPage({ posts }: BlogPageProps) {
+  const { t, locale } = useI18n();
+
   return (
     <>
       <SEOHead
-        title="Blog"
-        description="Thoughts on web development, design, and technology."
+        title={t.blog.title}
+        description={t.blog.seoDescription}
         path="/blog/"
       />
 
@@ -44,14 +47,14 @@ export default function BlogPage({ posts }: BlogPageProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Blog</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{t.blog.title}</h1>
           <p className="mt-3 text-muted-foreground max-w-lg">
-            Thoughts, tutorials, and insights on web development and design.
+            {t.blog.subtitle}
           </p>
         </motion.div>
 
         {posts.length === 0 ? (
-          <p className="mt-12 text-muted-foreground">No posts yet. Check back soon!</p>
+          <p className="mt-12 text-muted-foreground">{t.blog.noPosts}</p>
         ) : (
           <motion.div
             variants={container}
@@ -88,7 +91,7 @@ export default function BlogPage({ posts }: BlogPageProps) {
                   <div className="flex items-center gap-4 text-xs text-muted-foreground shrink-0">
                     <span className="inline-flex items-center gap-1">
                       <Calendar className="w-3 h-3" />
-                      {new Date(post.date).toLocaleDateString('en-US', {
+                      {new Date(post.date).toLocaleDateString(locale === 'vi' ? 'vi-VN' : 'en-US', {
                         month: 'short',
                         day: 'numeric',
                         year: 'numeric',

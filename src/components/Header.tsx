@@ -1,12 +1,13 @@
-/** Site header with navigation, theme toggle, and command palette trigger */
+/** Site header with navigation, theme toggle, language switcher, and command palette trigger */
 
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
-import { Menu, X, Command } from 'lucide-react';
+import { useState, useMemo } from 'react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { NAV_LINKS } from '@/lib/constants';
+import { useI18n } from '@/lib/i18n';
 import ThemeToggle from './ThemeToggle';
+import LanguageSwitcher from './LanguageSwitcher';
 
 interface HeaderProps {
   onOpenCommandPalette: () => void;
@@ -15,6 +16,16 @@ interface HeaderProps {
 export default function Header({ onOpenCommandPalette }: HeaderProps) {
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { t } = useI18n();
+
+  /** Build nav links from translations */
+  const navLinks = useMemo(() => [
+    { href: '/', label: t.nav.home },
+    { href: '/about/', label: t.nav.about },
+    { href: '/projects/', label: t.nav.projects },
+    { href: '/blog/', label: t.nav.blog },
+    { href: '/contact/', label: t.nav.contact },
+  ], [t]);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
@@ -29,7 +40,7 @@ export default function Header({ onOpenCommandPalette }: HeaderProps) {
 
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-1">
-          {NAV_LINKS.map((link) => {
+          {navLinks.map((link) => {
             const isActive =
               router.pathname === link.href ||
               (link.href !== '/' && router.pathname.startsWith(link.href.replace(/\/$/, '')));
@@ -59,16 +70,7 @@ export default function Header({ onOpenCommandPalette }: HeaderProps) {
 
         {/* Actions */}
         <div className="flex items-center gap-2">
-          {/* Command palette trigger */}
-          <button
-            onClick={onOpenCommandPalette}
-            className="hidden md:flex items-center gap-1.5 px-3 py-1.5 text-xs text-muted-foreground border border-border rounded-lg hover:bg-accent transition-colors"
-            aria-label="Open command palette"
-          >
-            <Command className="w-3 h-3" />
-            <span>⌘K</span>
-          </button>
-
+          <LanguageSwitcher />
           <ThemeToggle />
 
           {/* Mobile menu button */}
@@ -93,7 +95,7 @@ export default function Header({ onOpenCommandPalette }: HeaderProps) {
             className="md:hidden overflow-hidden border-t border-border"
           >
             <ul className="flex flex-col p-4 gap-1">
-              {NAV_LINKS.map((link) => {
+              {navLinks.map((link) => {
                 const isActive =
                   router.pathname === link.href ||
                   (link.href !== '/' && router.pathname.startsWith(link.href.replace(/\/$/, '')));

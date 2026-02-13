@@ -4,10 +4,12 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useI18n } from '@/lib/i18n';
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { t } = useI18n();
 
   useEffect(() => setMounted(true), []);
 
@@ -21,7 +23,7 @@ export default function ThemeToggle() {
     <button
       onClick={() => setTheme(isDark ? 'light' : 'dark')}
       className="relative w-9 h-9 flex items-center justify-center rounded-lg border border-border bg-background hover:bg-accent transition-colors"
-      aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+      aria-label={isDark ? t.themeToggle.switchToLight : t.themeToggle.switchToDark}
     >
       <AnimatePresence mode="wait" initial={false}>
         {isDark ? (

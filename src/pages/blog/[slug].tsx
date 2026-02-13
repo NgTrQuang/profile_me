@@ -7,6 +7,7 @@ import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import { getPostSlugs, getPostBySlug, type Post } from '@/lib/markdown';
 import { getArticleJsonLd, getCanonicalUrl } from '@/lib/seo';
+import { useI18n } from '@/lib/i18n';
 
 interface PostPageProps {
   post: Post;
@@ -32,6 +33,8 @@ export const getStaticProps: GetStaticProps<PostPageProps> = async ({ params }) 
 };
 
 export default function PostPage({ post }: PostPageProps) {
+  const { t, locale } = useI18n();
+
   const jsonLd = getArticleJsonLd({
     title: post.title,
     description: post.description,
@@ -63,7 +66,7 @@ export default function PostPage({ post }: PostPageProps) {
             className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Blog
+            {t.blog.backToBlog}
           </Link>
         </motion.div>
 
@@ -81,7 +84,7 @@ export default function PostPage({ post }: PostPageProps) {
           <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-1.5">
               <Calendar className="w-4 h-4" />
-              {new Date(post.date).toLocaleDateString('en-US', {
+              {new Date(post.date).toLocaleDateString(locale === 'vi' ? 'vi-VN' : 'en-US', {
                 month: 'long',
                 day: 'numeric',
                 year: 'numeric',
