@@ -97,7 +97,8 @@ export default function AboutPage() {
             {[
               'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js',
               'TailwindCSS', 'PostgreSQL', 'MongoDB', 'Redis', 'Docker',
-              'AWS', 'Vercel', 'Git', 'GraphQL', 'REST APIs', 'Figma',
+              'AWS', 'Vercel', 'Render', 'Git', 'GraphQL', 'REST APIs', 'Figma',
+              'Spring Boot', 'Java', 'Python', 'Oracle', 'C/C++', 'EMQX', 'MySQL',
             ].map((tech) => (
               <motion.span
                 key={tech}

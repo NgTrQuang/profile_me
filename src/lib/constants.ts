@@ -5,7 +5,7 @@ export const SITE_CONFIG = {
   title: 'ntquang@it — Full-Stack Developer',
   description:
     'Full-stack developer specializing in modern web technologies. Building fast, accessible, and beautiful digital experiences.',
-  url: 'https://johndoe.dev',
+  url: 'https://profile-me-delta.vercel.app',
   locale: 'en_US',
   author: 'ntquang@it',
   email: 'ngtrquangit@gmail.com',
@@ -38,12 +38,20 @@ export const SKILLS: Skill[] = [
   { name: 'Node.js', icon: 'node' },
   { name: 'TailwindCSS', icon: 'tailwind' },
   { name: 'Python', icon: 'python' },
+  { name: 'Java', icon: 'java' },
+  { name: 'Spring Boot', icon: 'spring' },
   { name: 'PostgreSQL', icon: 'postgres' },
-  { name: 'Docker', icon: 'docker' },
+  { name: 'MySQL', icon: 'mysql' },
+  { name: 'MongoDB', icon: 'mongodb' },
+  { name: 'Oracle', icon: 'oracle' },
   { name: 'Git', icon: 'git' },
-  { name: 'AWS', icon: 'aws' },
-  { name: 'GraphQL', icon: 'graphql' },
-  { name: 'Figma', icon: 'figma' },
+  { name: 'Redis', icon: 'redis' },
+  { name: "EMQX", icon: "emqx" },
+  { name: 'C/C++', icon: 'c/c-plus-plus' },
+  // { name: 'Docker', icon: 'docker' },
+  // { name: 'AWS', icon: 'aws' },
+  // { name: 'GraphQL', icon: 'graphql' },
+  // { name: 'Figma', icon: 'figma' },
 ];
 
 export interface Experience {
@@ -55,25 +63,25 @@ export interface Experience {
 
 export const EXPERIENCES: Experience[] = [
   {
-    title: 'Senior Frontend Engineer',
-    company: 'TechCorp Inc.',
-    period: '2023 — Present',
+    title: 'Full-Stack Engineer & Tester',
+    company: 'HPK Viet Nam Co., Jsc.',
+    period: '2024 — Present',
     description:
-      'Leading the frontend architecture for a SaaS platform serving 100k+ users. Migrated legacy codebase to Next.js, improving performance by 40%.',
+      'Full-stack developer specializing in modern web technologies. Creating fast, accessible, and visually appealing digital experiences. Integrated IoT projects for convenient remote control from anywhere.',
   },
   {
     title: 'Full-Stack Developer',
-    company: 'StartupXYZ',
-    period: '2021 — 2023',
+    company: 'Freelancer',
+    period: '2024',
     description:
-      'Built and shipped 3 products from scratch using React, Node.js, and PostgreSQL. Implemented CI/CD pipelines and automated testing.',
+      'Built and shipped 2 products from scratch using React, TailwindCSS, Node.js, and MongoDB. Implemented CI/CD pipelines and automated testing.',
   },
   {
-    title: 'Frontend Developer',
-    company: 'WebAgency Co.',
-    period: '2019 — 2021',
+    title: 'Collaborator',
+    company: 'Besoft Co.',
+    period: '2023 — 2024',
     description:
-      'Developed responsive web applications for 20+ clients. Specialized in performance optimization and accessibility.',
+      'Scan and edit documents as required by the project, helping to compile all project-related documents.',
   },
 ];
 
@@ -88,6 +96,16 @@ export interface Project {
 }
 
 export const PROJECTS: Project[] = [
+  {
+    title: 'Dynamic Card Creator',
+    description:
+      'Dynamic Card Creator is a web application that supports creating personalized cards directly in your browser using existing information. Users simply choose a suitable template, then fill in and add the necessary information (name, role, contact, description, etc.) to create the card quickly, without needing to install any additional software.',
+    techStack: ['React', 'JavaScript', 'TailwindCSS', 'Vite'],
+    demoUrl: 'https://dynamic-card-creator.onrender.com',
+    githubUrl: 'https://github.com/NgTrQuang/dynamic-card-creator',
+    image: '/images/projects/cloudsync.jpg',
+    featured: true,
+  },
   {
     title: 'CloudSync Dashboard',
     description:

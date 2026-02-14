@@ -96,30 +96,35 @@ const en: Translations = {
   // Experiences
   experiences: [
     {
-      title: 'Senior Frontend Engineer',
-      company: 'TechCorp Inc.',
-      period: '2023 — Present',
+      title: 'Full-Stack Engineer & Tester',
+      company: 'HPK Viet Nam Co., Jsc.',
+      period: '2024 — Present',
       description:
-        'Leading the frontend architecture for a SaaS platform serving 100k+ users. Migrated legacy codebase to Next.js, improving performance by 40%.',
+        'Full-stack developer specializing in modern web technologies. Creating fast, accessible, and visually appealing digital experiences. Integrated IoT projects for convenient remote control from anywhere.',
     },
     {
       title: 'Full-Stack Developer',
-      company: 'StartupXYZ',
-      period: '2021 — 2023',
+      company: 'Freelancer',
+      period: '2024',
       description:
-        'Built and shipped 3 products from scratch using React, Node.js, and PostgreSQL. Implemented CI/CD pipelines and automated testing.',
+        'Built and shipped 2 products from scratch using React, TailwindCSS, Node.js, and MongoDB. Implemented CI/CD pipelines and automated testing.',
     },
     {
-      title: 'Frontend Developer',
-      company: 'WebAgency Co.',
-      period: '2019 — 2021',
+      title: 'Collaborator',
+      company: 'Besoft Co.',
+      period: '2023 — 2024',
       description:
-        'Developed responsive web applications for 20+ clients. Specialized in performance optimization and accessibility.',
+        'Scan and edit documents as required by the project, helping to compile all project-related documents.',
     },
   ],
 
   // Projects data
   projectsData: [
+    {
+      title: 'Dynamic Card Creator',
+      description:
+        'Dynamic Card Creator is a web application that supports creating personalized cards directly in your browser using existing information. Users simply choose a suitable template, then fill in and add the necessary information (name, role, contact, description, etc.) to create the card quickly, without needing to install any additional software.',
+    },
     {
       title: 'CloudSync Dashboard',
       description:

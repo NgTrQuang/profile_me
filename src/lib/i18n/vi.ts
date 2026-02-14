@@ -94,30 +94,35 @@ const vi = {
   // Experiences (translatable content)
   experiences: [
     {
-      title: 'Kỹ sư Frontend Cao cấp',
-      company: 'TechCorp Inc.',
-      period: '2023 — Hiện tại',
+      title: 'Kỹ sư Full-Stack & Kiểm thử',
+      company: 'HPK Viet Nam Co., Jsc.',
+      period: '2024 — Hiện tại',
       description:
-        'Dẫn dắt kiến trúc frontend cho nền tảng SaaS phục vụ hơn 100k người dùng. Chuyển đổi codebase cũ sang Next.js, cải thiện hiệu suất 40%.',
+        'Lập trình viên full-stack chuyên về công nghệ web hiện đại. Tạo ra những trải nghiệm số nhanh, dễ tiếp cận và đẹp mắt. Dự án IOT được tích hợp để điều khiển từ xa, thuận tiện dù ở mọi nơi.',
     },
     {
       title: 'Lập trình viên Full-Stack',
-      company: 'StartupXYZ',
-      period: '2021 — 2023',
+      company: 'Freelancer',
+      period: '2024',
       description:
-        'Xây dựng và phát hành 3 sản phẩm từ đầu sử dụng React, Node.js và PostgreSQL. Triển khai CI/CD và kiểm thử tự động.',
+        'Xây dựng và phát hành 2 sản phẩm từ đầu sử dụng React, TailwindCSS, Node.js và MongoDB. Triển khai CI/CD và kiểm thử tự động.',
     },
     {
-      title: 'Lập trình viên Frontend',
-      company: 'WebAgency Co.',
-      period: '2019 — 2021',
+      title: 'Cộng tác viên',
+      company: 'Besoft Co.',
+      period: '2023 — 2024',
       description:
-        'Phát triển ứng dụng web responsive cho hơn 20 khách hàng. Chuyên về tối ưu hiệu suất và khả năng tiếp cận.',
+        'Scan và chỉnh sửa tài liệu theo yêu cầu của dự án, giúp hỗ trợ tổng hợp các tài liệu liên quan đến dự án.',
     },
   ],
 
   // Projects data (translatable content)
   projectsData: [
+    {
+      title: 'Dynamic Card Creator',
+      description:
+        'Dynamic Card Creator là ứng dụng web hỗ trợ tạo thẻ cá nhân trực tiếp trên trình duyệt thông tin có sẵn. Người dùng chỉ cần chọn một mẫu phù hợp, sau đó điền và bổ sung các thông tin cần thiết (tên, vai trò, liên hệ, mô tả…) để tạo thẻ một cách nhanh chóng, không cần cài đặt thêm bất kỳ phần mềm nào.',
+    },
     {
       title: 'CloudSync Dashboard',
       description:
