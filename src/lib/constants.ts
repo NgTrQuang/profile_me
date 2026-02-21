@@ -103,17 +103,17 @@ export const PROJECTS: Project[] = [
     techStack: ['React', 'JavaScript', 'TailwindCSS', 'Vite'],
     demoUrl: 'https://dynamic-card-creator.onrender.com',
     githubUrl: 'https://github.com/NgTrQuang/dynamic-card-creator',
-    image: '/images/projects/cloudsync.jpg',
+    image: '/images/projects/dynamic-card-creator.jpg',
     featured: true,
   },
   {
-    title: 'CloudSync Dashboard',
+    title: 'The Weather Point',
     description:
-      'A real-time cloud infrastructure monitoring dashboard with live metrics, alerts, and team collaboration features.',
+      'The Weather Point app provides real-time weather information, forecasts, air quality index, and location information — completely free, with no API key required.',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'WebSocket', 'D3.js'],
-    demoUrl: 'https://cloudsync-demo.vercel.app',
-    githubUrl: 'https://github.com/johndoe/cloudsync',
-    image: '/images/projects/cloudsync.jpg',
+    demoUrl: 'https://the-weather-point.vercel.app',
+    githubUrl: 'https://github.com/NgTrQuang/the-weather-point',
+    image: '/images/projects/the-weather-point.jpg',
     featured: true,
   },
   {

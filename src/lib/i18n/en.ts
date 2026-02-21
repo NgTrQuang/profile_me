@@ -126,9 +126,9 @@ const en: Translations = {
         'Dynamic Card Creator is a web application that supports creating personalized cards directly in your browser using existing information. Users simply choose a suitable template, then fill in and add the necessary information (name, role, contact, description, etc.) to create the card quickly, without needing to install any additional software.',
     },
     {
-      title: 'CloudSync Dashboard',
+      title: 'The Weather Point',
       description:
-        'A real-time cloud infrastructure monitoring dashboard with live metrics, alerts, and team collaboration features.',
+        'The Weather Point app provides real-time weather information, forecasts, air quality index, and location information — completely free, with no API key required.',
     },
     {
       title: 'DevFlow',

@@ -124,9 +124,9 @@ const vi = {
         'Dynamic Card Creator là ứng dụng web hỗ trợ tạo thẻ cá nhân trực tiếp trên trình duyệt thông tin có sẵn. Người dùng chỉ cần chọn một mẫu phù hợp, sau đó điền và bổ sung các thông tin cần thiết (tên, vai trò, liên hệ, mô tả…) để tạo thẻ một cách nhanh chóng, không cần cài đặt thêm bất kỳ phần mềm nào.',
     },
     {
-      title: 'CloudSync Dashboard',
+      title: 'The Weather Point',
       description:
-        'Bảng điều khiển giám sát hạ tầng đám mây thời gian thực với số liệu trực tiếp, cảnh báo và tính năng cộng tác nhóm.',
+        'The Weather Point cung cấp thông tin thời tiết theo thời gian thực, dự báo, chỉ số chất lượng không khí và thông tin vị trí — hoàn toàn miễn phí, không cần khóa API.',
     },
     {
       title: 'DevFlow',
