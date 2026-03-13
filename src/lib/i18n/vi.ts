@@ -13,22 +13,26 @@ const vi = {
   // Home page
   home: {
     availableForWork: 'Sẵn sàng nhận việc',
-    tagline: 'Xây dựng web, từng pixel một.',
+    tagline: 'Kỹ sư phần mềm',
     description:
-      'Lập trình viên full-stack chuyên về công nghệ web hiện đại. Tạo ra những trải nghiệm số nhanh, dễ tiếp cận và đẹp mắt.',
+      'Kỹ sư phần mềm Full-Stack với kinh nghiệm xây dựng các ứng dụng web có khả năng mở rộng và hệ thống thời gian thực sử dụng React và Node.js.',
     viewProjects: 'Xem dự án',
     contactMe: 'Liên hệ',
+    downloadCV: 'Tải CV',
   },
 
   // About page
   about: {
     title: 'Giới thiệu',
     seoDescription: 'Tìm hiểu thêm về {name} — kỹ năng, kinh nghiệm và nền tảng.',
-    bio1: 'Tôi là một lập trình viên full-stack với hơn 5 năm kinh nghiệm xây dựng các ứng dụng web hiện đại. Tôi chuyên về React, TypeScript và Node.js, với niềm đam mê tạo ra những trải nghiệm số nhanh, dễ tiếp cận và được thiết kế đẹp mắt.',
-    bio2: 'Khi không lập trình, bạn sẽ thấy tôi khám phá các dự án mã nguồn mở, viết bài blog kỹ thuật, hoặc thử nghiệm với các công nghệ mới. Tôi tin vào code sạch, kiến trúc chu đáo và học hỏi không ngừng.',
+    bio1: 'Kỹ sư phần mềm Full-Stack với kinh nghiệm xây dựng các ứng dụng web có khả năng mở rộng và hệ thống thời gian thực sử dụng React và Node.js. Có kinh nghiệm về kiến trúc backend, giao tiếp IoT và triển khai hệ thống.',
+    bio2: 'Tư duy kỹ thuật tập trung vào tư duy hệ thống, kiến trúc dễ bảo trì và phát triển sản phẩm dài hạn. Tốt nghiệp ngành Công nghệ Thông tin tại Đại học Cần Thơ (2019–2024, GPA: 2.91/4.00).',
     skillsTitle: 'Kỹ năng & Công nghệ',
     techStackTitle: 'Công nghệ sử dụng',
-    experienceTitle: 'Kinh nghiệm',
+    experienceTitle: 'Kinh nghiệm làm việc',
+    educationTitle: 'Học vấn',
+    certificationsTitle: 'Chứng chỉ',
+    interestsTitle: 'Sở thích',
   },
 
   // Projects page
@@ -94,26 +98,47 @@ const vi = {
   // Experiences (translatable content)
   experiences: [
     {
-      title: 'Kỹ sư Full-Stack & Kiểm thử',
-      company: 'HPK Viet Nam Co., Jsc.',
-      period: '2024 — Hiện tại',
+      title: 'Kỹ sư Full-Stack',
+      company: 'Công ty CP Công nghệ & Đào tạo HPK Việt Nam',
+      period: 'Tháng 12/2024 — Hiện tại',
       description:
-        'Lập trình viên full-stack chuyên về công nghệ web hiện đại. Tạo ra những trải nghiệm số nhanh, dễ tiếp cận và đẹp mắt. Dự án IOT được tích hợp để điều khiển từ xa, thuận tiện dù ở mọi nơi.',
+        'Phát triển và bảo trì các ứng dụng web full-stack sử dụng React và Node.js. Thiết kế kiến trúc backend và lược đồ cơ sở dữ liệu để hỗ trợ các tính năng ứng dụng có khả năng mở rộng. Triển khai giao tiếp thời gian thực giữa thiết bị IoT và hệ thống backend sử dụng MQTT và EMQX broker. Cấu hình môi trường triển khai sử dụng Nginx và PM2 cho dịch vụ production.',
     },
     {
       title: 'Lập trình viên Full-Stack',
       company: 'Freelancer',
-      period: '2024',
+      period: 'Tháng 12/2023 — Tháng 12/2024',
       description:
-        'Xây dựng và phát hành 2 sản phẩm từ đầu sử dụng React, TailwindCSS, Node.js và MongoDB. Triển khai CI/CD và kiểm thử tự động.',
+        'Phát triển 2 nền tảng thương mại điện tử full-stack từ đầu, bao gồm hệ thống quản lý sản phẩm và xử lý đơn hàng. Xây dựng REST API sử dụng Node.js và Express. Thiết kế giao diện responsive sử dụng React + TailwindCSS. Tích hợp kiến trúc cơ sở dữ liệu MongoDB.',
     },
     {
       title: 'Cộng tác viên',
-      company: 'Besoft Co.',
-      period: '2023 — 2024',
+      company: 'Công ty TNHH Besoft',
+      period: 'Tháng 9/2023 — Tháng 12/2023',
       description:
-        'Scan và chỉnh sửa tài liệu theo yêu cầu của dự án, giúp hỗ trợ tổng hợp các tài liệu liên quan đến dự án.',
+        'Scan và chỉnh sửa tài liệu theo yêu cầu của dự án. Tinh thần làm việc nhóm, môi trường làm việc thực tế.',
     },
+  ],
+
+  // Education
+  education: {
+    university: 'Đại học Cần Thơ',
+    major: 'Công nghệ Thông tin',
+    period: '2019 — 2024',
+    gpa: 'GPA: 2.91/4.00',
+  },
+
+  // Certifications
+  certifications: [
+    { name: 'Chứng chỉ tiếng Anh', level: 'B1' },
+    { name: 'Giấy phép lái xe', level: 'B2' },
+  ],
+
+  // Interests
+  interests: [
+    'Khám phá các dự án mã nguồn mở',
+    'Xây dựng ứng dụng web thử nghiệm',
+    'Đọc sách và nghe nhạc',
   ],
 
   // Projects data (translatable content)
@@ -121,7 +146,7 @@ const vi = {
     {
       title: 'Dynamic Card Creator',
       description:
-        'Dynamic Card Creator là ứng dụng web hỗ trợ tạo thẻ cá nhân trực tiếp trên trình duyệt thông tin có sẵn. Người dùng chỉ cần chọn một mẫu phù hợp, sau đó điền và bổ sung các thông tin cần thiết (tên, vai trò, liên hệ, mô tả…) để tạo thẻ một cách nhanh chóng, không cần cài đặt thêm bất kỳ phần mềm nào.',
+        'Dynamic Card Creator là ứng dụng web hỗ trợ tạo thẻ cá nhân trực tiếp trên trình duyệt với thông tin có sẵn. Người dùng chỉ cần chọn một mẫu phù hợp, sau đó điền và bổ sung các thông tin cần thiết (tên, vai trò, liên hệ, mô tả…) để tạo thẻ một cách nhanh chóng, không cần cài đặt thêm bất kỳ phần mềm nào.',
     },
     {
       title: 'The Weather Point',
@@ -129,29 +154,9 @@ const vi = {
         'The Weather Point cung cấp thông tin thời tiết theo thời gian thực, dự báo, chỉ số chất lượng không khí và thông tin vị trí — hoàn toàn miễn phí, không cần khóa API.',
     },
     {
-      title: 'DevFlow',
+      title: 'Portfolio Website',
       description:
-        'Công cụ tự động hóa quy trình làm việc mã nguồn mở cho lập trình viên, tích hợp với GitHub, Jira và Slack.',
-    },
-    {
-      title: 'MarkdownPad',
-      description:
-        'Trình soạn thảo markdown tối giản, không gây xao nhãng với xem trước trực tiếp, tô sáng cú pháp và tùy chọn xuất.',
-    },
-    {
-      title: 'API Toolkit',
-      description:
-        'Công cụ kiểm thử REST API nhẹ với biến môi trường, lịch sử yêu cầu và trực quan hóa phản hồi.',
-    },
-    {
-      title: 'ColorPalette AI',
-      description:
-        'Trình tạo bảng màu bằng AI, tạo ra các bảng màu hài hòa từ mô tả văn bản.',
-    },
-    {
-      title: 'TaskZen',
-      description:
-        'Ứng dụng quản lý công việc tối giản với phím tắt, thẻ tag và phân tích ngày bằng ngôn ngữ tự nhiên.',
+        'Website portfolio cá nhân được xây dựng bằng Next.js, TypeScript và TailwindCSS. Tích hợp hỗ trợ đa ngôn ngữ (Tiếng Việt/Tiếng Anh), giao diện sáng/tối, blog với markdown, bảng lệnh và tối ưu SEO.',
     },
   ],
 };

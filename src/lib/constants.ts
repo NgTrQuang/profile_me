@@ -1,16 +1,19 @@
 /** Site-wide constants and personal data */
 
 export const SITE_CONFIG = {
-  name: 'Nguyễn Trí Quãng',
-  title: 'ntquang@it — Full-Stack Developer',
+  name: 'Nguyen Tri Quang',
+  title: 'Nguyen Tri Quang — Software Engineer',
   description:
-    'Full-stack developer specializing in modern web technologies. Building fast, accessible, and beautiful digital experiences.',
+    'Full-Stack Software Engineer with experience building scalable web applications and real-time systems using React and Node.js.',
   url: 'https://profile-me-delta.vercel.app',
-  locale: 'en_US',
-  author: 'ntquang@it',
+  locale: 'vi_VN',
+  author: 'Nguyen Tri Quang',
   email: 'ngtrquangit@gmail.com',
-  tagline: 'Building the web, one pixel at a time.',
+  phone: '0377643961',
+  tagline: 'Software Engineer',
   avatar: '/images/ANH_AVATAR.jpg',
+  address: '323B, Alley 114, Kien Thi Nhan Street, Nguyet Hoa Ward, Vinh Long Province',
+  dob: '12/11/2001',
   socials: {
     github: 'https://github.com/NgTrQuang',
     linkedin: 'https://linkedin.com/in/NgTrQuang',
@@ -32,26 +35,28 @@ export interface Skill {
 }
 
 export const SKILLS: Skill[] = [
-  { name: 'TypeScript', icon: 'ts' },
   { name: 'React', icon: 'react' },
-  { name: 'Next.js', icon: 'nextjs' },
-  { name: 'Node.js', icon: 'node' },
+  { name: 'JavaScript (ES6+)', icon: 'js' },
   { name: 'TailwindCSS', icon: 'tailwind' },
+  { name: 'HTML5/CSS3', icon: 'html' },
+  { name: 'Node.js', icon: 'node' },
+  { name: 'Express.js', icon: 'express' },
+  { name: 'RESTful API', icon: 'api' },
+  { name: 'JWT', icon: 'jwt' },
+  { name: 'SpringBoot (Java)', icon: 'spring' },
   { name: 'Python', icon: 'python' },
-  { name: 'Java', icon: 'java' },
-  { name: 'Spring Boot', icon: 'spring' },
-  { name: 'PostgreSQL', icon: 'postgres' },
-  { name: 'MySQL', icon: 'mysql' },
   { name: 'MongoDB', icon: 'mongodb' },
-  { name: 'Oracle', icon: 'oracle' },
+  { name: 'MySQL', icon: 'mysql' },
+  { name: 'PostgreSQL', icon: 'postgres' },
   { name: 'Git', icon: 'git' },
+  { name: 'Linux', icon: 'linux' },
+  { name: 'Docker', icon: 'docker' },
+  { name: 'Nginx', icon: 'nginx' },
+  { name: 'PM2', icon: 'pm2' },
   { name: 'Redis', icon: 'redis' },
-  { name: "EMQX", icon: "emqx" },
-  { name: 'C/C++', icon: 'c/c-plus-plus' },
-  // { name: 'Docker', icon: 'docker' },
-  // { name: 'AWS', icon: 'aws' },
-  // { name: 'GraphQL', icon: 'graphql' },
-  // { name: 'Figma', icon: 'figma' },
+  { name: 'MQTT (EMQX)', icon: 'emqx' },
+  { name: 'Vercel', icon: 'vercel' },
+  { name: 'Render', icon: 'render' },
 ];
 
 export interface Experience {
@@ -63,25 +68,25 @@ export interface Experience {
 
 export const EXPERIENCES: Experience[] = [
   {
-    title: 'Full-Stack Engineer & Tester',
-    company: 'HPK Viet Nam Co., Jsc.',
-    period: '2024 — Present',
+    title: 'Full-Stack Engineer',
+    company: 'HPK Vietnam Tech & Training JSC',
+    period: 'Dec 2024 — Present',
     description:
-      'Full-stack developer specializing in modern web technologies. Creating fast, accessible, and visually appealing digital experiences. Integrated IoT projects for convenient remote control from anywhere.',
+      'Develop and maintain full-stack web applications using React and Node.js. Designed backend architecture and database schemas to support scalable application features. Implemented real-time communication between IoT devices and backend systems using MQTT and EMQX broker. Configured deployment environments using Nginx and PM2 for production services. Independently developed and maintained systems from design to deployment.',
   },
   {
     title: 'Full-Stack Developer',
     company: 'Freelancer',
-    period: '2024',
+    period: 'Dec 2023 — Dec 2024',
     description:
-      'Built and shipped 2 products from scratch using React, TailwindCSS, Node.js, and MongoDB. Implemented CI/CD pipelines and automated testing.',
+      'Developed 2 full-stack e-commerce platforms from scratch, including product management and order processing systems. Built REST APIs using Node.js and Express. Designed responsive frontend using React + TailwindCSS. Integrated MongoDB database architecture.',
   },
   {
     title: 'Collaborator',
-    company: 'Besoft Co.',
-    period: '2023 — 2024',
+    company: 'Besoft Co., Ltd',
+    period: 'Sep 2023 — Dec 2023',
     description:
-      'Scan and edit documents as required by the project, helping to compile all project-related documents.',
+      'Scan and edit documents according to the project\'s requirements. Teamwork spirit, practical work environment.',
   },
 ];
 
@@ -117,53 +122,13 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    title: 'DevFlow',
+    title: 'Portfolio Website',
     description:
-      'An open-source developer workflow automation tool that integrates with GitHub, Jira, and Slack.',
-    techStack: ['React', 'Node.js', 'GraphQL', 'PostgreSQL', 'Docker'],
-    demoUrl: 'https://devflow.dev',
-    githubUrl: 'https://github.com/johndoe/devflow',
-    image: '/images/projects/devflow.jpg',
+      'A personal portfolio website built with Next.js, TypeScript, and TailwindCSS. Features multi-language support (Vietnamese/English), dark/light theme, blog with markdown, command palette, and SEO optimization.',
+    techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
+    demoUrl: 'https://profile-me-delta.vercel.app',
+    githubUrl: 'https://github.com/NgTrQuang/profile_me',
+    image: '/images/projects/portfolio.jpg',
     featured: true,
-  },
-  {
-    title: 'MarkdownPad',
-    description:
-      'A minimal, distraction-free markdown editor with live preview, syntax highlighting, and export options.',
-    techStack: ['React', 'TypeScript', 'CodeMirror', 'TailwindCSS'],
-    demoUrl: 'https://markdownpad.app',
-    githubUrl: 'https://github.com/johndoe/markdownpad',
-    image: '/images/projects/markdownpad.jpg',
-    featured: true,
-  },
-  {
-    title: 'API Toolkit',
-    description:
-      'A lightweight REST API testing tool with environment variables, request history, and response visualization.',
-    techStack: ['TypeScript', 'Electron', 'React', 'SQLite'],
-    demoUrl: 'https://api-toolkit.dev',
-    githubUrl: 'https://github.com/johndoe/api-toolkit',
-    image: '/images/projects/api-toolkit.jpg',
-    featured: false,
-  },
-  {
-    title: 'ColorPalette AI',
-    description:
-      'An AI-powered color palette generator that creates harmonious color schemes from text descriptions.',
-    techStack: ['Python', 'FastAPI', 'React', 'OpenAI API'],
-    demoUrl: 'https://colorpalette-ai.vercel.app',
-    githubUrl: 'https://github.com/johndoe/colorpalette-ai',
-    image: '/images/projects/colorpalette.jpg',
-    featured: false,
-  },
-  {
-    title: 'TaskZen',
-    description:
-      'A minimalist task management app with keyboard shortcuts, tags, and natural language date parsing.',
-    techStack: ['Next.js', 'Prisma', 'TailwindCSS', 'Vercel'],
-    demoUrl: 'https://taskzen.app',
-    githubUrl: 'https://github.com/johndoe/taskzen',
-    image: '/images/projects/taskzen.jpg',
-    featured: false,
   },
 ];

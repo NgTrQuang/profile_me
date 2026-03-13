@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, FolderOpen, Mail } from 'lucide-react';
+import { ArrowRight, FolderOpen, Mail, Download } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 import { SITE_CONFIG } from '@/lib/constants';
 import { getPersonJsonLd } from '@/lib/seo';
@@ -101,6 +101,14 @@ export default function HomePage() {
               <Mail className="w-4 h-4" />
               {t.home.contactMe}
             </Link>
+            <a
+              href="/files/NGUYENTRIQUANG_CV.pdf"
+              download
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium rounded-lg border border-border hover:bg-accent transition-colors"
+            >
+              <Download className="w-4 h-4" />
+              {t.home.downloadCV}
+            </a>
           </motion.div>
         </div>
 
