@@ -131,4 +131,45 @@ export const PROJECTS: Project[] = [
     image: '/images/projects/portfolio.jpg',
     featured: true,
   },
+  {
+    title: 'The evolution of modern systems',
+    description:
+      'The Evolution of Modern Systems is an informational web project that visually explores how software systems and modern application architectures have evolved over time, presenting key concepts of modern software design and development in an accessible layout. It serves as both an educational resource and a showcase of modern web development patterns.',
+    techStack: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
+    demoUrl: 'https://the-evolution-of-modern-systems.vercel.app',
+    githubUrl: 'https://github.com/NgTrQuang/the_evolution_of_modern_systems',
+    image: '/images/projects/the-evolution-of-modern-systems.jpg',
+    featured: true,
+  },
+  {
+    title: 'Financial Asset Statistics Website',
+    description:
+      'Financial Asset Statistics Website is an interactive web application focused on presenting financial asset data and statistics in a clear and visual format. It helps users explore key financial metrics and trends efficiently through a modern frontend interface, showcasing both information architecture and data visualization techniques.',
+    techStack: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Chart.js/Recharts'],
+    demoUrl: 'https://financial-asset-statistics-website.vercel.app',
+    githubUrl: 'https://github.com/NgTrQuang/financial-asset-statistics-website',
+    image: '/images/projects/financial-asset-statistics-website.jpg',
+    featured: false,
+  },
+  {
+    title: 'ChatFlow — Real-Time Chat Application',
+    description:
+      'A full-stack real-time chat platform enabling instant messaging through public/private rooms and direct messages. The system features authentication, friend management, online presence tracking, and scalable real-time communication infrastructure with persistent storage and caching.',
+    techStack: [
+      'React 18',
+      'Vite',
+      'Tailwind CSS',
+      'Zustand',
+      'Socket.io (Client & Server)',
+      'Node.js',
+      'Express.js',
+      'PostgreSQL (Neon)',
+      'Redis (Upstash)',
+      'JWT Authentication'
+    ],
+    demoUrl: 'https://chatflow-seven.vercel.app',
+    githubUrl: 'https://github.com/NgTrQuang/chatflow',
+    image: '/images/projects/chatflow.jpg',
+    featured: false,
+  }
 ];

@@ -160,6 +160,21 @@ const en: Translations = {
       description:
         'A personal portfolio website built with Next.js, TypeScript, and TailwindCSS. Features multi-language support (Vietnamese/English), dark/light theme, blog with markdown, command palette, and SEO optimization.',
     },
+    {
+      title: 'The evolution of modern systems',
+      description:
+        'The Evolution of Modern Systems is an informational web project that visually explores how software systems and modern application architectures have evolved over time, presenting key concepts of modern software design and development in an accessible layout. It serves as both an educational resource and a showcase of modern web development patterns.',
+    },
+    {
+      title: 'Financial Asset Statistics Website',
+      description:
+        'Financial Asset Statistics Website is an interactive web application focused on presenting financial asset data and statistics in a clear and visual format. It helps users explore key financial metrics and trends efficiently through a modern frontend interface, showcasing both information architecture and data visualization techniques.',
+    },
+    {
+      title: 'ChatFlow — Real-Time Chat Application',
+      description:
+        'A full-stack real-time chat platform enabling instant messaging through public/private rooms and direct messages. The system features authentication, friend management, online presence tracking, and scalable real-time communication infrastructure with persistent storage and caching.',
+    },
   ],
 };
 

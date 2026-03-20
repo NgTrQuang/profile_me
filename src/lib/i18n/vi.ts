@@ -158,6 +158,21 @@ const vi = {
       description:
         'Website portfolio cá nhân được xây dựng bằng Next.js, TypeScript và TailwindCSS. Tích hợp hỗ trợ đa ngôn ngữ (Tiếng Việt/Tiếng Anh), giao diện sáng/tối, blog với markdown, bảng lệnh và tối ưu SEO.',
     },
+    {
+      title: 'The Evolution of Modern Systems',
+      description:
+        'The Evolution of Modern Systems là một trang web thông tin trình bày sự tiến hóa của các hệ thống phần mềm và kiến trúc ứng dụng hiện đại theo từng giai đoạn. Nội dung được trình bày rõ ràng, dễ hiểu, phù hợp cho người xem tìm hiểu về các mô hình phát triển phần mềm hiện đại.',
+    },
+    {
+      title: 'Financial Asset Statistics Website',
+      description:
+        'Financial Asset Statistics Website là ứng dụng web tương tác tập trung vào việc trình bày dữ liệu và thống kê về các tài sản tài chính theo cách rõ ràng và trực quan. Nó giúp người dùng khám phá các chỉ số tài chính và xu hướng một cách hiệu quả thông qua giao diện frontend hiện đại, thể hiện cả kiến trúc thông tin và kỹ thuật trực quan hóa dữ liệu.',
+    },
+    {
+      title: 'ChatFlow — Ứng dụng chat Real-Time',
+      description:
+        'ChatFlow là nền tảng chat thời gian thực full-stack cho phép nhắn tin tức thì qua phòng công khai/riêng và tin nhắn trực tiếp. Hệ thống tích hợp xác thực, quản lý bạn bè, theo dõi trạng thái trực tuyến và cơ sở hạ tầng giao tiếp thời gian thực mở rộng với lưu trữ vĩnh viễn và bộ nhớ đệm.',
+    },
   ],
 };
 
