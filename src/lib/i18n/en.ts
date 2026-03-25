@@ -72,7 +72,7 @@ const en: Translations = {
   // Footer
   footer: {
     builtWith: 'Built with',
-    and: 'and Next.js.',
+    and: 'Privacy Policy | Terms of Service | Legal Notice',
   },
 
   // Command palette

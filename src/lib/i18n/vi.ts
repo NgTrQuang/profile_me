@@ -70,7 +70,7 @@ const vi = {
   // Footer
   footer: {
     builtWith: 'Được xây dựng với',
-    and: 'và Next.js.',
+    and: 'Chính sách bảo mật | Điều khoản dịch vụ | Thông báo pháp lý',
   },
 
   // Command palette

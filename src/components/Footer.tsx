@@ -12,8 +12,16 @@ export default function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear} {SITE_CONFIG.name}. {t.footer.builtWith}{' '}
-          <Heart className="inline w-3 h-3 text-red-500" /> {t.footer.and}
+          &copy; {currentYear} {SITE_CONFIG.name}. 
+          <a
+            href="href=https://legal-info-center.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="legal-info-center"
+          >
+            <Heart className="inline w-3 h-3 text-red-500" /> {t.footer.and}
+          </a>
         </p>
         <div className="flex items-center gap-3">
           <a
