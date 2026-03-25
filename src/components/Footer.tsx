@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear} {SITE_CONFIG.name}. 
+          &copy; {currentYear} {SITE_CONFIG.name}{' '} 
           <a
             href="https://legal-info-center.vercel.app"
             target="_blank"
