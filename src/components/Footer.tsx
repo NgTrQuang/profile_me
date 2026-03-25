@@ -14,7 +14,7 @@ export default function Footer() {
         <p className="text-sm text-muted-foreground">
           &copy; {currentYear} {SITE_CONFIG.name}. 
           <a
-            href="href=https://legal-info-center.vercel.app"
+            href="https://legal-info-center.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
