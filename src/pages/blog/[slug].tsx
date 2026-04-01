@@ -5,12 +5,12 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
-import { getPostSlugs, getPostBySlug, type Post } from '@/lib/markdown';
+import { getPostSlugs, getBilingualPostBySlug, type BilingualPost } from '@/lib/markdown';
 import { getArticleJsonLd, getCanonicalUrl } from '@/lib/seo';
 import { useI18n } from '@/lib/i18n';
 
 interface PostPageProps {
-  post: Post;
+  bilingual: BilingualPost;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -23,17 +23,19 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<PostPageProps> = async ({ params }) => {
   const slug = params?.slug as string;
-  const post = await getPostBySlug(slug);
+  const bilingual = await getBilingualPostBySlug(slug);
 
-  if (!post) {
+  if (!bilingual) {
     return { notFound: true };
   }
 
-  return { props: { post } };
+  return { props: { bilingual } };
 };
 
-export default function PostPage({ post }: PostPageProps) {
-  const { t, locale } = useI18n();
+export default function PostPage({ bilingual }: PostPageProps) {
+  const { t, locale, setLocale } = useI18n();
+  const post = locale === 'vi' ? bilingual.vi : bilingual.en;
+  const hasViTranslation = bilingual.vi.content !== bilingual.en.content;
 
   const jsonLd = getArticleJsonLd({
     title: post.title,
@@ -109,6 +111,40 @@ export default function PostPage({ post }: PostPageProps) {
             ))}
           </div>
         </motion.header>
+
+        {/* Language switch — only shown when VI translation exists */}
+        {hasViTranslation && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.15, duration: 0.3 }}
+            className="mt-6 flex items-center gap-2 text-sm"
+          >
+            <span className="text-muted-foreground">
+              {locale === 'vi' ? 'Ngôn ngữ:' : 'Language:'}
+            </span>
+            <button
+              onClick={() => setLocale('en')}
+              className={`px-2 py-0.5 rounded-md text-xs font-medium transition-colors ${
+                locale !== 'vi'
+                  ? 'bg-accent text-foreground'
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => setLocale('vi')}
+              className={`px-2 py-0.5 rounded-md text-xs font-medium transition-colors ${
+                locale === 'vi'
+                  ? 'bg-accent text-foreground'
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              VI
+            </button>
+          </motion.div>
+        )}
 
         {/* Content */}
         <motion.div

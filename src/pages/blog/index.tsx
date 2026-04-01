@@ -5,11 +5,11 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, Tag } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
-import { getAllPosts, type PostMeta } from '@/lib/markdown';
+import { getAllBilingualPosts, type BilingualPostMeta } from '@/lib/markdown';
 import { useI18n } from '@/lib/i18n';
 
 interface BlogPageProps {
-  posts: PostMeta[];
+  posts: BilingualPostMeta[];
 }
 
 const container = {
@@ -26,7 +26,7 @@ const item = {
 };
 
 export const getStaticProps: GetStaticProps<BlogPageProps> = async () => {
-  const posts = getAllPosts();
+  const posts = getAllBilingualPosts();
   return { props: { posts } };
 };
 
@@ -62,49 +62,52 @@ export default function BlogPage({ posts }: BlogPageProps) {
             animate="show"
             className="mt-12 space-y-1"
           >
-            {posts.map((post) => (
-              <motion.article key={post.slug} variants={item}>
-                <Link
-                  href={`/blog/${post.slug}/`}
-                  className="group flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-4 py-4 -mx-4 rounded-xl hover:bg-accent transition-colors"
-                >
-                  <div className="flex-1 min-w-0">
-                    <h2 className="text-base font-medium group-hover:text-foreground transition-colors truncate">
-                      {post.title}
-                    </h2>
-                    <p className="mt-1 text-sm text-muted-foreground line-clamp-1">
-                      {post.description}
-                    </p>
-                    {/* Tags */}
-                    <div className="mt-2 flex flex-wrap gap-1.5">
-                      {post.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-medium rounded-md bg-muted text-muted-foreground"
-                        >
-                          <Tag className="w-2.5 h-2.5" />
-                          {tag}
-                        </span>
-                      ))}
+            {posts.map((bilingual) => {
+              const post = locale === 'vi' ? bilingual.vi : bilingual.en;
+              return (
+                <motion.article key={post.slug} variants={item}>
+                  <Link
+                    href={`/blog/${post.slug}/`}
+                    className="group flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-4 py-4 -mx-4 rounded-xl hover:bg-accent transition-colors"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <h2 className="text-base font-medium group-hover:text-foreground transition-colors truncate">
+                        {post.title}
+                      </h2>
+                      <p className="mt-1 text-sm text-muted-foreground line-clamp-1">
+                        {post.description}
+                      </p>
+                      {/* Tags */}
+                      <div className="mt-2 flex flex-wrap gap-1.5">
+                        {post.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-medium rounded-md bg-muted text-muted-foreground"
+                          >
+                            <Tag className="w-2.5 h-2.5" />
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-center gap-4 text-xs text-muted-foreground shrink-0">
-                    <span className="inline-flex items-center gap-1">
-                      <Calendar className="w-3 h-3" />
-                      {new Date(post.date).toLocaleDateString(locale === 'vi' ? 'vi-VN' : 'en-US', {
-                        month: 'short',
-                        day: 'numeric',
-                        year: 'numeric',
-                      })}
-                    </span>
-                    <span className="inline-flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
-                      {post.readingTime}
-                    </span>
-                  </div>
-                </Link>
-              </motion.article>
-            ))}
+                    <div className="flex items-center gap-4 text-xs text-muted-foreground shrink-0">
+                      <span className="inline-flex items-center gap-1">
+                        <Calendar className="w-3 h-3" />
+                        {new Date(post.date).toLocaleDateString(locale === 'vi' ? 'vi-VN' : 'en-US', {
+                          month: 'short',
+                          day: 'numeric',
+                          year: 'numeric',
+                        })}
+                      </span>
+                      <span className="inline-flex items-center gap-1">
+                        <Clock className="w-3 h-3" />
+                        {post.readingTime}
+                      </span>
+                    </div>
+                  </Link>
+                </motion.article>
+              );
+            })}
           </motion.div>
         )}
       </div>
