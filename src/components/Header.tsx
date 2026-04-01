@@ -31,11 +31,28 @@ export default function Header({ onOpenCommandPalette }: HeaderProps) {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-lg font-semibold tracking-tight hover:text-muted-foreground transition-colors"
-        >
-          NTQ<span className="text-muted-foreground">.</span>
+        <Link href="/" className="group flex items-center select-none" aria-label="NTQ Home">
+          <span className="font-semibold tracking-[0.15em] text-xl leading-none text-foreground transition-opacity group-hover:opacity-80">
+            NT
+            <span className="relative inline-block">
+              Q
+              {/* Cyan tail — replicates the slash extending outside bottom-right of Q */}
+              <span
+                className="absolute"
+                style={{
+                  bottom: '-0.04em',
+                  right: '-0.04em',
+                  width: '0.4em',
+                  height: '0.12em',
+                  background: 'linear-gradient(to right, #00D4FF, #00BFFF)',
+                  borderRadius: '0',
+                  transform: 'rotate(-128deg) skewX(-38deg)',
+                  transformOrigin: 'top left',
+                  boxShadow: '0 0 8px 3px #00D4FFaa, 0 0 16px 6px #00D4FF44',
+                }}
+              />
+            </span>
+          </span>
         </Link>
 
         {/* Desktop nav */}
@@ -48,6 +65,7 @@ export default function Header({ onOpenCommandPalette }: HeaderProps) {
               <li key={link.href}>
                 <Link
                   href={link.href}
+                  prefetch={link.href === '/blog/'}
                   className={`relative px-3 py-2 text-sm rounded-lg transition-colors ${
                     isActive
                       ? 'text-foreground'
