@@ -154,9 +154,14 @@ export default function AboutPage() {
                   </div>
                   <span className="text-xs text-muted-foreground font-mono">{exp.period}</span>
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                {/* <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                   {exp.description}
-                </p>
+                </p> */}
+                <ul className="mt-2 text-sm text-muted-foreground leading-relaxed list-disc pl-5">
+                  {(exp.description || []).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>

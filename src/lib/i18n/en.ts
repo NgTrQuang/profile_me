@@ -1,5 +1,6 @@
 /** English translations */
 
+import { a } from 'framer-motion/client';
 import type { Translations } from './vi';
 
 const en: Translations = {
@@ -124,22 +125,33 @@ const en: Translations = {
       title: 'Full-Stack Engineer',
       company: 'HPK Vietnam Tech & Training JSC',
       period: 'Dec 2024 — Present',
-      description:
-        'Develop and maintain full-stack web applications using React and Node.js. Designed backend architecture and database schemas to support scalable application features. Implemented real-time communication between IoT devices and backend systems using MQTT and EMQX broker. Configured deployment environments using Nginx and PM2 for production services.',
+      description: [
+        'Develop and operate a support system for remote monitoring and control of IoT devices (electricity, water).',
+        'Design and build a RESTful API using Node.js (Express), processing data and synchronizing device status.',
+        'Implement real-time communication via MQTT (EMQX).',
+        'Design database and priority levels for maintenance system.',
+        'Configure production environment using Nginx and PM2.'
+      ],
     },
     {
       title: 'Full-Stack Developer',
       company: 'Freelancer',
       period: 'Dec 2023 — Dec 2024',
-      description:
-        'Developed 2 full-stack e-commerce platforms from scratch, including product management and order processing systems. Built REST APIs using Node.js and Express. Designed responsive frontend using React + TailwindCSS. Integrated MongoDB database architecture.',
+      description: [
+        'Develop full-stack e-commerce systems on demand, including product management and order processing.',
+        'Build RESTful APIs with Node.js (Express), handle business logic, and integrate with MongoDB databases.',
+        'Design responsive interfaces using ReactJS and TailwindCSS.',
+        'Customize the system to meet various functional and architectural requirements.',
+      ],
     },
     {
       title: 'Collaborator',
       company: 'Besoft Co., Ltd',
       period: 'Sep 2023 — Dec 2023',
-      description:
-        'Scan and edit documents according to the project\'s requirements. Teamwork spirit, practical work environment.',
+      description: [
+        'Assisting in processing and standardizing documents as required by the project.',
+        'Working in a team environment, adhering to established procedures.',
+      ],
     },
   ],
 

@@ -101,22 +101,33 @@ const vi = {
       title: 'Kỹ sư Full-Stack',
       company: 'Công ty CP Công nghệ & Đào tạo HPK Việt Nam',
       period: 'Tháng 12/2024 — Hiện tại',
-      description:
-        'Phát triển và bảo trì các ứng dụng web full-stack sử dụng React và Node.js. Thiết kế kiến trúc backend và lược đồ cơ sở dữ liệu để hỗ trợ các tính năng ứng dụng có khả năng mở rộng. Triển khai giao tiếp thời gian thực giữa thiết bị IoT và hệ thống backend sử dụng MQTT và EMQX broker. Cấu hình môi trường triển khai sử dụng Nginx và PM2 cho dịch vụ production.',
+      description: [
+        'Phát triển và vận hành hệ thống phụ trợ cho ứng dụng giám sát và điều khiển thiết bị IoT (điện, nước) từ xa.',
+        'Thiết kế và xây dựng RESTful API bằng Node.js (Express), xử lý dữ liệu và đồng bộ thiết bị trạng thái.',
+        'Triển khai giao diện thời gian thực tiếp theo giữa thiết bị và máy chủ thông qua MQTT giao thức thông tin (EMQX), xử lý dữ liệu luồng giữa các thiết bị chính-phụ.',
+        'Thiết kế cơ sở dữ liệu và mức độ ưu tiên nhằm hướng tới hệ thống bảo trì.',
+        'Cấu hình và phát triển môi trường sản xuất sử dụng Nginx và PM2.',
+      ],
     },
     {
       title: 'Lập trình viên Full-Stack',
       company: 'Freelancer',
       period: 'Tháng 12/2023 — Tháng 12/2024',
-      description:
-        'Phát triển 2 nền tảng thương mại điện tử full-stack từ đầu, bao gồm hệ thống quản lý sản phẩm và xử lý đơn hàng. Xây dựng REST API sử dụng Node.js và Express. Thiết kế giao diện responsive sử dụng React + TailwindCSS. Tích hợp kiến trúc cơ sở dữ liệu MongoDB.',
+      description: [
+        'Phát triển các hệ thống thương mại điện tử full-stack theo yêu cầu, bao gồm quản lý sản phẩm và xử lý đơn hàng.',
+        'Xây dựng RESTful API với Node.js (Express), xử lý logic nghiệp vụ và tích hợp cơ sở dữ liệu MongoDB.',
+        'Thiết kế giao diện responsive sử dụng ReactJS và TailwindCSS.',
+        'Tùy chỉnh hệ thống theo nhiều yêu cầu khác nhau về chức năng và kiến trúc.',
+      ],
     },
     {
       title: 'Cộng tác viên',
       company: 'Công ty TNHH Besoft',
       period: 'Tháng 9/2023 — Tháng 12/2023',
-      description:
-        'Scan và chỉnh sửa tài liệu theo yêu cầu của dự án. Tinh thần làm việc nhóm, môi trường làm việc thực tế.',
+      description: [
+        'Hỗ trợ xử lý và chuẩn hóa tài liệu theo yêu cầu dự án.',
+        'Làm việc trong môi trường nhóm, tuân thủ quy trình thực tế.',
+      ],
     },
   ],
 
