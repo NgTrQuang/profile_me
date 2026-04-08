@@ -101,7 +101,7 @@ const vi = {
   experiences: [
     {
       title: 'Kỹ sư Full-Stack',
-      company: 'Công ty CP Công nghệ & Đào tạo HPK Việt Nam',
+      company: 'Công ty Cổ Phần Công nghệ & Đào tạo HPK Việt Nam',
       period: 'Tháng 12/2024 — Hiện tại',
       description: [
         'Phát triển và vận hành hệ thống phụ trợ cho ứng dụng giám sát và điều khiển thiết bị IoT (điện, nước) từ xa.',
