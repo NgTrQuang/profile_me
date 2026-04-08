@@ -160,19 +160,24 @@ const en: Translations = {
   // Projects data
   projectsData: [
     {
+      title: 'IoT Monitoring & Control System',
+      description:
+        'Contributed to building a backend system for monitoring and controlling IoT devices (electricity and water meters). Worked with MQTT (EMQX) for real-time communication between devices and servers, and designed APIs to process and synchronize device data. Focused on handling real-time data flow and system reliability. (Details cannot be shared due to confidentiality).',
+    },
+    {
       title: 'Dynamic Card Creator',
       description:
-        'Dynamic Card Creator is a web application that supports creating personalized cards directly in your browser using existing information. Users simply choose a suitable template, then fill in and add the necessary information (name, role, contact, description, etc.) to create the card quickly, without needing to install any additional software.',
+        'Developed a web application for creating personalized cards directly in the browser, focusing on a flexible and reusable component-based architecture. Designed dynamic data handling to allow users to configure content and render it across multiple templates. Emphasized maintainability and extensibility in frontend system design.',
     },
     {
       title: 'The Weather Point',
       description:
-        'The Weather Point app provides real-time weather information, forecasts, air quality index, and location information — completely free, with no API key required.',
+        'Built a real-time weather application that aggregates and presents weather, air quality, and location data. Focused on asynchronous data flow handling, real-time updates, and efficient state management. Designed the system to ensure responsive UI and smooth user experience when working with continuously changing data.',
     },
     {
       title: 'Portfolio Website',
       description:
-        'A personal portfolio website built with Next.js, TypeScript, and TailwindCSS. Features multi-language support (Vietnamese/English), dark/light theme, blog with markdown, command palette, and SEO optimization.',
+        'Developed a personal portfolio using Next.js and TypeScript with a focus on performance, SEO, and scalability. Designed a modular frontend architecture supporting multi-language content, markdown-based blogging, and theming. Structured for long-term maintainability and extensibility.',
     },
     {
       title: 'The evolution of modern systems',

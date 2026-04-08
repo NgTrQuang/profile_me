@@ -102,34 +102,54 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    title: 'IoT Monitoring & Control System',
+    description:
+      'Contributed to building a backend system for monitoring and controlling IoT devices (electricity and water meters). Worked with MQTT (EMQX) for real-time communication between devices and server, and designed APIs to process and synchronize device data. Focused on handling real-time data flow and system reliability. (Details cannot be shared due to confidentiality)',
+    techStack: ['Node.js', 'Express', 'MQTT (EMQX)', 'Redis', 'MongoDB', 'Nginx', 'PM2', 'React', 'TailwindCSS'],
+    demoUrl: '',
+    githubUrl: '',
+    image: '/images/projects/iot-system.jpg',
+    featured: true,
+  },
+  {
+    title: 'Online Book Marketplace System',
+    description:
+      'Built a full-stack e-commerce platform for online book trading, focusing on scalable system design and clean architecture. Developed backend services using Java (Spring Framework) with layered architecture (Controller - Service - Repository) to manage authentication, product catalog, order lifecycle, and payment workflows. Designed RESTful APIs and integrated VNPAY for online transactions. Implemented a responsive React frontend with optimized state management for product browsing, cart operations, and real-time user interactions. Developed an admin dashboard for managing users, inventory, orders, and business analytics.',
+    techStack: ['Java', 'Spring Framework', 'MySQL', 'React', 'Axios', 'MUI', 'Bootstrap'],
+    demoUrl: '',
+    githubUrl: 'https://github.com/NgTrQuang/book-marketplace-system',
+    image: '/images/projects/bookstore-system.jpg',
+    featured: true,
+  },
+  {
     title: 'Dynamic Card Creator',
     description:
-      'Dynamic Card Creator is a web application that supports creating personalized cards directly in your browser using existing information. Users simply choose a suitable template, then fill in and add the necessary information (name, role, contact, description, etc.) to create the card quickly, without needing to install any additional software.',
+      'Developed a web application for creating personalized cards directly in the browser, focusing on a flexible and reusable component-based architecture. Designed dynamic data handling to allow users to configure content and render it across multiple templates. Emphasized maintainability and extensibility in frontend system design.',
     techStack: ['React', 'JavaScript', 'TailwindCSS', 'Vite'],
     demoUrl: 'https://dynamic-card-creator.onrender.com',
     githubUrl: 'https://github.com/NgTrQuang/dynamic-card-creator',
     image: '/images/projects/dynamic-card-creator.jpg',
-    featured: true,
+    featured: false,
   },
   {
     title: 'The Weather Point',
     description:
-      'The Weather Point app provides real-time weather information, forecasts, air quality index, and location information — completely free, with no API key required.',
+      'Built a real-time weather application that aggregates and presents weather, air quality, and location data. Focused on asynchronous data flow handling, real-time updates, and efficient state management. Designed the system to ensure responsive UI and smooth user experience when working with continuously changing data.',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'WebSocket', 'D3.js'],
     demoUrl: 'https://the-weather-point.vercel.app',
     githubUrl: 'https://github.com/NgTrQuang/the-weather-point',
     image: '/images/projects/the-weather-point.jpg',
-    featured: true,
+    featured: false,
   },
   {
     title: 'Portfolio Website',
     description:
-      'A personal portfolio website built with Next.js, TypeScript, and TailwindCSS. Features multi-language support (Vietnamese/English), dark/light theme, blog with markdown, command palette, and SEO optimization.',
+      'Developed a personal portfolio using Next.js and TypeScript with a focus on performance, SEO, and scalability. Designed a modular frontend architecture supporting multi-language content, markdown-based blogging, and theming. Structured for long-term maintainability and extensibility.',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
     demoUrl: 'https://profile-me-delta.vercel.app',
     githubUrl: 'https://github.com/NgTrQuang/profile_me',
     image: '/images/projects/portfolio.jpg',
-    featured: true,
+    featured: false,
   },
   {
     title: 'The evolution of modern systems',

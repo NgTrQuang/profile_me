@@ -157,19 +157,29 @@ const vi = {
   // Projects data (translatable content)
   projectsData: [
     {
+      title: 'IoT Monitoring & Control System',
+      description:
+        'Đã đóng góp vào việc xây dựng hệ thống phụ trợ để giám sát và điều khiển các thiết bị IoT (đồng hồ điện và nước). Làm việc với MQTT (EMQX) để giao tiếp thời gian thực giữa các thiết bị và máy chủ, và thiết kế API để xử lý và đồng bộ hóa dữ liệu thiết bị. Tập trung vào việc xử lý luồng dữ liệu thời gian thực và độ tin cậy của hệ thống. (Chi tiết không thể được chia sẻ do tính bảo mật)',
+    },
+    {
+      title: 'Online Book Marketplace System',
+      description:
+        'Xây dựng nền tảng thương mại điện tử trực tuyến để mua bán sách, tập trung vào thiết kế hệ thống có khả năng mở rộng và kiến trúc sạch. Phát triển dịch vụ backend bằng Java (Spring Framework) với kiến trúc lớp (Controller - Service - Repository) để quản lý xác thực, danh mục sản phẩm, vòng đời đơn hàng và quy trình thanh toán. Thiết kế API RESTful và tích hợp VNPAY để xử lý giao dịch trực tuyến. Triển khai giao diện người dùng React với quản lý trạng thái tối ưu cho việc duyệt sản phẩm, thao tác giỏ hàng và tương tác thời gian thực. Phát triển bảng điều khiển quản trị để quản lý người dùng, kho hàng, đơn hàng và phân tích kinh doanh.',
+    },
+    {
       title: 'Dynamic Card Creator',
       description:
-        'Dynamic Card Creator là ứng dụng web hỗ trợ tạo thẻ cá nhân trực tiếp trên trình duyệt với thông tin có sẵn. Người dùng chỉ cần chọn một mẫu phù hợp, sau đó điền và bổ sung các thông tin cần thiết (tên, vai trò, liên hệ, mô tả…) để tạo thẻ một cách nhanh chóng, không cần cài đặt thêm bất kỳ phần mềm nào.',
+        'Đã phát triển một ứng dụng web để tạo thiệp cá nhân hóa trực tiếp trên trình duyệt, tập trung vào kiến ​​trúc dựa trên các thành phần linh hoạt và có thể tái sử dụng. Thiết kế hệ thống xử lý dữ liệu động cho phép người dùng cấu hình nội dung và hiển thị trên nhiều mẫu khác nhau. Nhấn mạnh tính dễ bảo trì và khả năng mở rộng trong thiết kế hệ thống giao diện người dùng.',
     },
     {
       title: 'The Weather Point',
       description:
-        'The Weather Point cung cấp thông tin thời tiết theo thời gian thực, dự báo, chỉ số chất lượng không khí và thông tin vị trí — hoàn toàn miễn phí, không cần khóa API.',
+        'Đã xây dựng một ứng dụng thời tiết thời gian thực tổng hợp và hiển thị dữ liệu thời tiết, chất lượng không khí và vị trí. Tập trung vào xử lý luồng dữ liệu bất đồng bộ, cập nhật thời gian thực và quản lý trạng thái hiệu quả. Thiết kế hệ thống để đảm bảo giao diện người dùng phản hồi nhanh và trải nghiệm người dùng mượt mà khi làm việc với dữ liệu thay đổi liên tục.',
     },
     {
       title: 'Portfolio Website',
       description:
-        'Website portfolio cá nhân được xây dựng bằng Next.js, TypeScript và TailwindCSS. Tích hợp hỗ trợ đa ngôn ngữ (Tiếng Việt/Tiếng Anh), giao diện sáng/tối, blog với markdown, bảng lệnh và tối ưu SEO.',
+        'Đã phát triển một portfolio cá nhân sử dụng Next.js và TypeScript, tập trung vào hiệu suất, SEO và khả năng mở rộng. Thiết kế kiến ​​trúc giao diện người dùng dạng mô-đun hỗ trợ nội dung đa ngôn ngữ, viết blog dựa trên Markdown và tùy chỉnh giao diện. Cấu trúc được thiết kế để dễ bảo trì và mở rộng lâu dài.',
     },
     {
       title: 'The Evolution of Modern Systems',
