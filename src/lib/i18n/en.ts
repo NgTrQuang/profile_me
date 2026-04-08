@@ -165,6 +165,11 @@ const en: Translations = {
         'Contributed to building a backend system for monitoring and controlling IoT devices (electricity and water meters). Worked with MQTT (EMQX) for real-time communication between devices and servers, and designed APIs to process and synchronize device data. Focused on handling real-time data flow and system reliability. (Details cannot be shared due to confidentiality).',
     },
     {
+      title: 'Online Book Marketplace System',
+      description:
+        'Built a full-stack e-commerce platform for online book trading, focusing on scalable system design and clean architecture. Developed backend services using Java (Spring Framework) with layered architecture (Controller - Service - Repository) to manage authentication, product catalog, order lifecycle, and payment workflows. Designed RESTful APIs and integrated VNPAY for online transactions. Implemented a responsive React frontend with optimized state management for product browsing, cart operations, and real-time user interactions. Developed an admin dashboard for managing users, inventory, orders, and business analytics.',
+    },
+    {
       title: 'Dynamic Card Creator',
       description:
         'Developed a web application for creating personalized cards directly in the browser, focusing on a flexible and reusable component-based architecture. Designed dynamic data handling to allow users to configure content and render it across multiple templates. Emphasized maintainability and extensibility in frontend system design.',
