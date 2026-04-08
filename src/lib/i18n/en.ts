@@ -28,8 +28,10 @@ const en: Translations = {
   about: {
     title: 'About Me',
     seoDescription: 'Learn more about {name} — skills, experience, and background.',
-    bio1: 'Full-Stack Software Engineer with experience building scalable web applications and real-time systems using React and Node.js. Experienced in backend architecture, IoT communication, and system deployment.',
-    bio2: 'Engineering mindset focused on system thinking, maintainable architecture, and long-term product development. Graduated in Information Technology from Can Tho University (2019–2024, GPA: 2.91/4.00).',
+    bio1: 'Full-Stack Software Engineer with a focus on backend and systems development, experienced in building scalable web applications and handling real-time data. Participated in the development of IoT device monitoring and control systems, implementing device-server communication via MQTT (EMQX).',
+    bio2: 'Experienced in designing RESTful APIs with Node.js (Express), system organization and performance optimization, and possesses frontend expertise with ReactJS for end-to-end product development.',
+    bio3: 'Technical thinking focused on problem analysis, designing efficient systems that balance performance, scalability, and maintainability. Aimed at building sustainable solutions aligned with the long-term development goals of the product and the business.',
+    bio4: 'Willing to learn and adapt to new technologies, especially Java in a production environment.',
     skillsTitle: 'Skills & Technologies',
     techStackTitle: 'Tech Stack',
     experienceTitle: 'Work Experience',

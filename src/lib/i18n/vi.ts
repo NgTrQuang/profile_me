@@ -25,8 +25,10 @@ const vi = {
   about: {
     title: 'Giới thiệu',
     seoDescription: 'Tìm hiểu thêm về {name} — kỹ năng, kinh nghiệm và nền tảng.',
-    bio1: 'Kỹ sư phần mềm Full-Stack với kinh nghiệm xây dựng các ứng dụng web có khả năng mở rộng và hệ thống thời gian thực sử dụng React và Node.js. Có kinh nghiệm về kiến trúc backend, giao tiếp IoT và triển khai hệ thống.',
-    bio2: 'Tư duy kỹ thuật tập trung vào tư duy hệ thống, kiến trúc dễ bảo trì và phát triển sản phẩm dài hạn. Tốt nghiệp ngành Công nghệ Thông tin tại Đại học Cần Thơ (2019–2024, GPA: 2.91/4.00).',
+    bio1: 'Kỹ sư phần mềm Full-Stack với định hướng phát triển chuyên sâu về backend và hệ thống, có kinh nghiệm xây dựng các ứng dụng web có khả năng mở rộng và xử lý dữ liệu thời gian thực. Đã tham gia phát triển hệ thống giám sát và điều khiển thiết bị IoT, triển khai giao tiếp giữa thiết bị và server thông qua MQTT (EMQX).',
+    bio2: 'Có kinh nghiệm thiết kế RESTful API với Node.js (Express), tổ chức hệ thống và tối ưu hiệu năng, đồng thời có nền tảng frontend với ReactJS để phát triển sản phẩm end-to-end.',
+    bio3: 'Tư duy kỹ thuật tập trung vào việc phân tích bài toán, thiết kế hệ thống hợp lý và cân bằng giữa hiệu năng, khả năng mở rộng và tính dễ bảo trì. Hướng đến việc xây dựng các giải pháp bền vững, phù hợp với mục tiêu phát triển dài hạn của sản phẩm và doanh nghiệp.',
+    bio4: 'Sẵn sàng học hỏi và thích nghi với các công nghệ mới, đặc biệt là Java trong môi trường production.',
     skillsTitle: 'Kỹ năng & Công nghệ',
     techStackTitle: 'Công nghệ sử dụng',
     experienceTitle: 'Kinh nghiệm làm việc',

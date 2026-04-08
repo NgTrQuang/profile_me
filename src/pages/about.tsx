@@ -42,6 +42,8 @@ export default function AboutPage() {
           <div className="mt-6 max-w-2xl space-y-4 text-muted-foreground leading-relaxed">
             <p>{t.about.bio1}</p>
             <p>{t.about.bio2}</p>
+            <p>{t.about.bio3}</p>
+            <p>{t.about.bio4}</p>
           </div>
           <a
             href="/files/NGUYENTRIQUANG_CV.pdf"
