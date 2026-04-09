@@ -191,7 +191,6 @@ export default function AboutPage() {
               <p className="text-sm text-muted-foreground">{t.education.major}</p>
               <div className="mt-1 flex items-center gap-3 text-xs text-muted-foreground font-mono">
                 <span>{t.education.period}</span>
-                <span className="text-foreground font-semibold">{t.education.gpa}</span>
               </div>
             </div>
           </motion.div>

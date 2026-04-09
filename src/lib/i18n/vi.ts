@@ -138,7 +138,6 @@ const vi = {
     university: 'Đại học Cần Thơ',
     major: 'Công nghệ Thông tin',
     period: '2019 — 2024',
-    gpa: 'GPA: 2.91/4.00',
   },
 
   // Certifications

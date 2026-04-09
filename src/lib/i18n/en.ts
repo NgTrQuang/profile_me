@@ -105,7 +105,6 @@ const en: Translations = {
     university: 'Can Tho University',
     major: 'Information Technology',
     period: '2019 — 2024',
-    gpa: 'GPA: 2.91/4.00',
   },
 
   // Certifications
